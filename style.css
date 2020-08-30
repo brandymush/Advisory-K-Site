@@ -138,7 +138,9 @@ header ul li a:hover {
   height: 420px;
   width: 200px;
   left: 19%;
-  top: 40px;
+  top: 40%;
+  -webkit-transform: translate(-19%, -40%);
+          transform: translate(-19%, -40%);
 }
 
 .heroe .rectangle img.border-img {
@@ -426,9 +428,10 @@ header ul li a:hover {
 }
 
 .industry > div > div > div .company .text p {
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
   padding-bottom: 0;
+  line-height: 25px;
 }
 
 .industry > div > div > div .company .text h4 {
@@ -445,8 +448,8 @@ header ul li a:hover {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 100%;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,6 +461,12 @@ header ul li a:hover {
           justify-content: center;
   margin-bottom: 24px;
   opacity: 0;
+  text-decoration: none;
+}
+
+.industry > div > div > div .company:hover {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .industry > div > div > div .company:hover .text {
@@ -483,10 +492,10 @@ header ul li a:hover {
 }
 
 .industry > div > div > div .company:hover .text p {
-  font-size: 22px;
+  font-size: 17px;
   text-align: left;
   padding-bottom: 0;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .industry > div > div > div .company:hover .text h4 {
@@ -540,17 +549,31 @@ header ul li a:hover {
 
 .testimony {
   background-image: url(./Imgs/Testimonialsbanner.jpg);
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   margin-bottom: 300px;
+  height: 80vh;
+  position: relative;
+  z-index: 999;
+}
+
+.testimony .overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .4;
+  position: absolute;
 }
 
 .testimony > div > div {
   position: absolute;
-  top: 50%;
+  top: 37%;
+  -webkit-transform: translate(auto, -37%);
+          transform: translate(auto, -37%);
 }
 
 .testimony > div > div .test-caption {
@@ -595,6 +618,39 @@ header ul li a:hover {
 .testimony > div > div .test-caption .test-card h5 {
   font-size: 30px;
   padding-top: 30px;
+}
+
+.testimony > div > div .test-caption .test-card .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 120px;
+  position: relative;
+  margin-left: auto;
+}
+
+.testimony > div > div .test-caption .test-card .control a {
+  border-radius: 100%;
+  border: 4px solid #000;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.testimony > div > div .test-caption .test-card .control a span {
+  color: #000;
+  font-size: 30px;
 }
 
 .testimony > div > div .company-review p {
@@ -841,6 +897,22 @@ footer .newsletter .inputs input {
   background-color: #f6c139;
 }
 
+footer .newsletter .inputs input > ::-webkit-input-placeholder {
+  color: #000;
+}
+
+footer .newsletter .inputs input > :-ms-input-placeholder {
+  color: #000;
+}
+
+footer .newsletter .inputs input > ::-ms-input-placeholder {
+  color: #000;
+}
+
+footer .newsletter .inputs input > ::placeholder {
+  color: #000;
+}
+
 footer .newsletter .inputs button {
   height: 60px;
   background-color: #000;
@@ -880,6 +952,10 @@ footer .cont-details .detail-2 h2 {
 footer .cont-details .detail-2 p {
   padding-bottom: 50px;
   font-size: 26px;
+}
+
+footer .cont-details .detail-2 p i {
+  padding-right: 20px;
 }
 
 footer .cont-details .detail-3 h2 {

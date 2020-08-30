@@ -1,3 +1,14 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 $('.carousel').carousel();
 
 var owl= $('.owl-carousel');
@@ -25,7 +36,7 @@ var carouselOption={
         },
         576:{
             items:1,
-            nav:true,
+        
            
         }
        
