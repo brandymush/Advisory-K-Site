@@ -79,6 +79,22 @@ p {
   font-family: 'roman';
 }
 
+input, ::-webkit-input-placeholder {
+  color: #000;
+}
+
+input, :-ms-input-placeholder {
+  color: #000;
+}
+
+input, ::-ms-input-placeholder {
+  color: #000;
+}
+
+input, ::placeholder {
+  color: #000;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +387,10 @@ header ul li a:hover {
   text-align: center;
   font-size: 24px;
   padding-bottom: 70px;
+}
+
+.industry > div {
+  padding: 0 100px;
 }
 
 .industry > div > div > div {
@@ -785,6 +805,22 @@ header ul li a:hover {
   height: 100%;
 }
 
+.form ::-webkit-input-placeholder {
+  color: #000;
+}
+
+.form :-ms-input-placeholder {
+  color: #000;
+}
+
+.form ::-ms-input-placeholder {
+  color: #000;
+}
+
+.form ::placeholder {
+  color: #000;
+}
+
 .form .bussiness-tag {
   width: 500px;
   height: 550px;
@@ -883,7 +919,7 @@ header ul li a:hover {
 }
 
 .form form input:focus, .form form textarea:focus {
-  border-bottom: 1px solid #000;
+  border-bottom: 1.5px solid #f6c139;
 }
 
 .form form input[type="submit"] {
@@ -894,13 +930,13 @@ header ul li a:hover {
   width: 200px;
 }
 
-.client > div > div {
+.client > div > :first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.client > div > div p {
+.client > div > :first-child p {
   font-size: 22px;
   font-family: 'roman';
   padding-bottom: 20px;
@@ -910,23 +946,25 @@ header ul li a:hover {
   line-height: 30px;
 }
 
-.client > div > div h2 {
+.client > div > :first-child h2 {
   font-size: 30px;
   padding-bottom: 20px;
 }
 
-.client > div .company img {
-  height: 160px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.client > div > :first-child > div:first-child {
+  padding-left: 100px;
 }
 
-.client > div .company .owl-nav {
+.client > div > div:last-child img {
+  height: 160px;
+}
+
+.client > div > div:last-child .owl-nav {
   margin: auto;
   text-align: center;
 }
 
-.client > div .company .owl-nav button {
+.client > div > div:last-child .owl-nav button {
   height: 50px;
   width: 50px;
   border: 3px solid #f6c139;
@@ -935,11 +973,11 @@ header ul li a:hover {
   border-radius: 100%;
 }
 
-.client > div .company .owl-dots {
+.client > div > div:last-child .owl-dots {
   text-align: center;
 }
 
-.client > div .company .owl-dots button {
+.client > div > div:last-child .owl-dots button {
   height: 15px;
   width: 15px;
   background-color: #f6c139;
@@ -948,7 +986,7 @@ header ul li a:hover {
   outline: 0;
 }
 
-.client > div .company .owl-dots button.active {
+.client > div > div:last-child .owl-dots button.active {
   background: #000;
 }
 
@@ -995,22 +1033,6 @@ footer .newsletter .inputs input {
   background-color: #f6c139;
 }
 
-footer .newsletter .inputs input > ::-webkit-input-placeholder {
-  color: #000;
-}
-
-footer .newsletter .inputs input > :-ms-input-placeholder {
-  color: #000;
-}
-
-footer .newsletter .inputs input > ::-ms-input-placeholder {
-  color: #000;
-}
-
-footer .newsletter .inputs input > ::placeholder {
-  color: #000;
-}
-
 footer .newsletter .inputs button {
   height: 60px;
   background-color: #000;
@@ -1020,6 +1042,10 @@ footer .newsletter .inputs button {
   outline: 0;
   border-radius: 0px 8px 8px 0px;
   font-size: 30px;
+}
+
+footer .newsletter .inputs button:hover i {
+  color: #f6c139;
 }
 
 footer .cont-details {
@@ -1126,5 +1152,9 @@ footer .bottom .icons a i {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
+}
+
+footer .bottom .icons a i:hover {
+  color: #f6c139;
 }
 /*# sourceMappingURL=style.css.map */
