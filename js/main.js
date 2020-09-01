@@ -8,13 +8,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+$('.menu').click(function(){
+    $('.menu span').toggleClass('change');
+    $('header ul').toggleClass('change');
+});
 $('.carousel').carousel();
 
 var owl= $('.owl-carousel');
 
 var carouselOption={
-    items:3,
+    items:1,
     loop:true,
     margin:10,
     autoplay:false,

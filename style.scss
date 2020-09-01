@@ -302,7 +302,7 @@ input,::placeholder{color: #000;}
           }
           .cont-details{padding:60px 0;border-top:1px solid #4d4d4d;border-bottom:1px solid #4d4d4d;margin:30px 0;
               .detail-1{
-                 img{width:200px;padding-bottom:20px;}
+                 img{padding-bottom:0px;height: 170px;text-align: left;}
                  p{font-family:'roman';line-height:30px;font-size: 26px;}
               }
               .detail-2{padding-left:50px;
@@ -336,7 +336,245 @@ input,::placeholder{color: #000;}
 
 
        //extra small device (potrait phones, less than 576px)
-       @media (max-width: 576px){}
+       @media (max-width: 576px){
+           // HEADER SECTION STYLES STARTS
+ header{padding:0 0px;position: relative;align-items:center;
+     img{height:120px;}
+     .menu{height:40px;width:40px;margin-right:20px;display: flex;flex-direction:column;justify-content:center;
+        span{display: block;height:4px;width:100%;background-color: rgb(246, 193, 57);transform-origin:8px;transition:all .5s ease-in-out;
+            &:nth-of-type(2){margin:5px 0;}
+            &.change{
+              &:nth-of-type(2){opacity: 0;}
+              &:nth-of-type(1){transform: rotate(45deg);}
+               &:nth-of-type(3){transform: rotate(-45deg);}
+            }
+        }
+     }
+     .menu .change{
+        ul{right:0;}
+     
+     }
+     ul{ flex-direction: column;position: absolute;top:100%;background-color:rgb(246, 193, 57);z-index: 999;width:100%;height:40vh;padding:20px 30px;right:100%;transition:all .5s ease-in-out;
+        li{padding-left:20px;padding-bottom:20px;
+            a{font-family:'roman';color:#000;font-size:24px;text-decoration: none;
+               &:hover{color:#fff;text-decoration: none;}
+            }
+         }
+         &.change{right:0;}
+     }
+
+   }
+
+
+//    Header styles ends
+           // billboard styles starts
+.heroe{
+
+  .rectangle{left:33%;top:40%;transform:translate(-19%,-40%);
+
+      // .dots{display: flex;flex-direction:column;align-items:center;justify-content:center;position:absolute;top:-16%;right:92%;
+      //   .triangle{position: relative;;bottom:-50px;height:120px;}
+      //   .dot{position: relative;height:120px;}
+      // }
+      // .dots-2{display: flex;flex-direction:row;align-items:center;justify-content:center;position:absolute;bottom:-26%;left:20%;
+      //   .triangle{position: relative;;right:-50px;height:120px;}
+      //   .dot{position: relative;height: 120px;}
+      // }
+  }
+  .main-text{align-self: center;justify-self: center;position: relative;left:0px;
+      p{font-size: 18px;}
+      h1{font-size:26px;}
+  }
+}
+
+
+// billboad ends 
+
+//about styles
+
+.about{margin:30px 0;
+     .about-text{margin-bottom:30px;
+         
+          h2{line-height:30px;padding-bottom:30px;font-size:30px;}
+     }
+     .caption{position: relative;right:0%;
+        img.bg-img{width:100%;object-fit: cover;}
+        .border-img{width: 100%;height:500px;}
+        .iframe{width:100%;height:100%;position: absolute;right:0%;bottom: -30%;
+        img{height: 100%;width:100%;object-fit: cover;}
+         
+        }
+     }
+}
+
+// about ends
+
+
+.industry{
+     h2{padding-top:30px;font-size:24px;
+       &:nth-of-type(2){text-align: left;}
+     }
+     p{font-size:20px;padding-bottom:70px;}
+     >div{padding: 0 20px;
+   //    >div{
+   //      >div{margin-bottom:30px;
+   //   .company{width:100%;border-radius:4px;display:flex;justify-content:center;position: relative;height:100%;overflow: hidden;
+   //   .overlay{background: #000;position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity:.4;}
+   //       img{width:100%;height:100%;}
+   //       .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;bottom:-50%;transition:all .5s ease;
+   //         p{font-size:17px;text-align: left;padding-bottom:0;line-height:25px;}
+   //         h4{font-size:30px;font-family: 'bold';padding-bottom: 25px;}
+   //         a{font-size: 24px;color: white;border:4px solid #fff;width: fit-content;border-radius: 100%;height:40px;width: 40px;display: flex;align-items: center;justify-content: center;margin-bottom:24px;opacity:0;text-decoration: none;}
+           
+           
+   //       }
+   //       &:hover{transition: all 1s ease-in-out;
+
+   //         .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;top:0;bottom:0;transition:all .5s ease-in-out;
+   //         p{font-size:17px;text-align: left;padding-bottom:0;line-height:25px;}
+   //         h4{font-size:30px;font-family: 'bold';padding-bottom: 25px;}
+   //         a{font-size: 24px;color: white;border:4px solid #fff;width: fit-content;border-radius: 100%;height:35px;width: 35px;display: flex;align-items: center;justify-content: center;margin-bottom:24px;opacity:1;}
+           
+           
+   //       }
+            
+   //       }
+   //   }  }}
+     ul.nav{
+        li{flex-wrap:wrap;padding-bottom:20px;width:calc(100%/3.5);
+            a{font-size:20px;}
+        }
+     }
+     
+     }
+   
+   }
+
+   // Companies ends
+
+    // TESTIMONIALS
+
+      .testimony{margin-bottom:30px;height:100vh;overflow: hidden;
+           
+          >div{
+            >div{position: absolute;top:0%;transform:translate(auto,0%);
+          
+           .test-caption{width:100%;height:500px;position: relative;
+               img{height: 100%;width:100%;object-fit: cover;}
+               .test-card{height:260px;width:100%;top:50%;right:0%; }
+                
+
+               
+             
+           }
+           .company-review{padding:15px 0;
+             p{font-family:'roman';font-size:28px;color: #fff;
+               &:nth-of-type(2){padding-top:20px;padding-right:60px;}
+             }
+
+           }
+      }}}
+
+
+
+   // TESTIMONIALS
+
+   // SCENARIOS
+.scenario{margin:30px 0;
+     h2{font-size:25px;}
+    
+     .biz-case{text-align: left;
+       h3{padding-left:0;}
+        ul{flex-direction:row;
+            padding-left:0px;
+            li{margin-right:12px;
+              
+                
+              }
+            
+            }
+        }
+     
+     .tab-content{margin-left:0px;}
+
+}
+
+
+// SCENARIOS
+
+   
+
+.form{display: flex;justify-content:center;flex-wrap:wrap;margin:30px 0;
+
+      .bussiness-tag{width:100%;height:500px;margin-bottom:20px;
+         img{height: 100%;width: 100%;object-fit: cover;}
+         .biz-card{top:0%;background:rgb(246, 193, 57);left:50%;transform: translate(-50%,0%);
+           h2{font-size:24px;}
+          
+         }
+       }
+
+       form{width:100%;padding:0 12px;
+          h2{padding-bottom:20px;font-size: 24px;}
+          p{font-size: 18px;padding-bottom:24px;}
+         
+         
+       }
+ }
+
+
+
+
+   // form ends
+
+    // clients
+
+   .client{margin:30px 0;
+     >div{
+     >:first-child{padding:0 15px;
+        
+         >div:first-child{padding-left: 20px;}
+      }
+     >div:last-child{
+         img{height:160px;}
+       
+         .owl-dots{display: none; }
+                
+         
+      }
+      }}
+      // ends
+ footer{padding:20px 0;
+          .newsletter{flex-direction: column;
+              h2{font-size:40px;margin-bottom:20px;}
+              .inputs{
+                 input{width:100%;}
+                
+              }
+          }
+          .cont-details{
+              .detail-1{
+                 img{height: 170px;}
+                 p{padding:20px 0;}
+              }
+             
+             
+              
+          }
+          .bottom{
+            p{font-size: 20px;}
+            .icons{
+              a{margin-bottom:10px;
+                
+
+              }
+            }
+          }
+       }
+       
+       }
+
+
        // small device (landscape phones,576px and up 767px)
        @media (min-width: 568px) and (max-width: 767px){}
        //medium device (tablet,768px and up )
