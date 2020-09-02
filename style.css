@@ -600,13 +600,20 @@ header ul li a:hover {
   width: 100%;
   height: 500px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .testimony > div > div .test-caption img {
-  height: 100%;
-  width: 100%;
+  height: 500px;
+  width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
 }
 
 .testimony > div > div .test-caption .test-card {
@@ -1209,8 +1216,8 @@ footer .bottom .icons a i:hover {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  header .menu .change ul {
-    right: 0;
+  header .menu .change {
+    background-color: #000;
   }
   header ul {
     -webkit-box-orient: vertical;
@@ -1246,10 +1253,65 @@ footer .bottom .icons a i:hover {
     right: 0;
   }
   .heroe .rectangle {
-    left: 33%;
-    top: 40%;
-    -webkit-transform: translate(-19%, -40%);
-            transform: translate(-19%, -40%);
+    left: 12%;
+    top: 0%;
+    -webkit-transform: translate(12%, 0%);
+            transform: translate(12%, 0%);
+    margin: auto;
+  }
+  .heroe .rectangle .dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: -10%;
+    right: 92%;
+  }
+  .heroe .rectangle .dots .triangle {
+    position: relative;
+    bottom: -30px;
+    height: 80px;
+  }
+  .heroe .rectangle .dots .dot {
+    position: relative;
+    height: 80px;
+  }
+  .heroe .rectangle .dots-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    bottom: -16%;
+    left: 20%;
+  }
+  .heroe .rectangle .dots-2 .triangle {
+    position: relative;
+    right: -30px;
+    height: 80px;
+  }
+  .heroe .rectangle .dots-2 .dot {
+    position: relative;
+    height: 80px;
   }
   .heroe .main-text {
     -ms-flex-item-align: center;
@@ -1258,7 +1320,7 @@ footer .bottom .icons a i:hover {
     -ms-grid-column-align: center;
         justify-self: center;
     position: relative;
-    left: 0px;
+    left: -30px;
   }
   .heroe .main-text p {
     font-size: 18px;
@@ -1303,6 +1365,9 @@ footer .bottom .icons a i:hover {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .industry {
+    margin-bottom: 30px;
+  }
   .industry h2 {
     padding-top: 30px;
     font-size: 24px;
@@ -1317,6 +1382,25 @@ footer .bottom .icons a i:hover {
   .industry > div {
     padding: 0 20px;
   }
+  .industry > div > div > div {
+    margin-bottom: 30px;
+  }
+  .industry > div > div > div .company {
+    height: 300px;
+  }
+  .industry > div > div > div .company img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .industry > div > div > div .company .text {
+    bottom: 0%;
+  }
+  .industry > div > div > div .company .text p {
+    font-size: 20px;
+  }
+  .industry > div > div > div .company .text a {
+    opacity: 1;
+  }
   .industry > div ul.nav li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1328,31 +1412,48 @@ footer .bottom .icons a i:hover {
   }
   .testimony {
     margin-bottom: 30px;
-    height: 100vh;
-    overflow: hidden;
+    height: 75vh;
+    margin-top: 30px;
   }
   .testimony > div > div {
     position: absolute;
     top: 0%;
     -webkit-transform: translate(auto, 0%);
             transform: translate(auto, 0%);
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
   .testimony > div > div .test-caption {
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: relative;
   }
   .testimony > div > div .test-caption img {
-    height: 100%;
+    height: 145px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    margin: inherit;
   }
   .testimony > div > div .test-caption .test-card {
     height: 260px;
     width: 100%;
-    top: 50%;
+    top: 26%;
     right: 0%;
+  }
+  .testimony > div > div .test-caption .test-card p {
+    font-size: 12px;
+  }
+  .testimony > div > div .test-caption .test-card h5 {
+    padding-top: 0px;
+  }
+  .testimony > div > div .test-caption .test-card .control {
+    bottom: -5px;
+    right: 0;
+  }
+  .testimony > div > div .test-caption .test-card .control a {
+    height: 34px;
+    width: 34px;
   }
   .testimony > div > div .company-review {
     padding: 15px 0;
@@ -1367,7 +1468,7 @@ footer .bottom .icons a i:hover {
     padding-right: 60px;
   }
   .scenario {
-    margin: 30px 0;
+    margin: 50px 0;
   }
   .scenario h2 {
     font-size: 25px;
@@ -1468,15 +1569,472 @@ footer .bottom .icons a i:hover {
   }
   footer .cont-details .detail-1 img {
     height: 170px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   footer .cont-details .detail-1 p {
     padding: 20px 0;
   }
+  footer .cont-details .detail-2 {
+    padding-left: 0;
+  }
+  footer .bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   footer .bottom p {
     font-size: 20px;
+    text-align: center;
+  }
+  footer .bottom .icons {
+    margin-top: 10px;
   }
   footer .bottom .icons a {
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  header {
+    padding: 0 0px;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header img {
+    height: 120px;
+  }
+  header .menu {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .menu span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #f6c139;
+    -webkit-transform-origin: 8px;
+            transform-origin: 8px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  header .menu span:nth-of-type(2) {
+    margin: 5px 0;
+  }
+  header .menu span.change:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .menu span.change:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .menu span.change:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .menu .change {
+    background-color: #000;
+  }
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #f6c139;
+    z-index: 999;
+    width: 100%;
+    height: 85vh;
+    padding: 20px 30px;
+    right: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  header ul li {
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+  header ul li a {
+    font-family: 'roman';
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  header ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  header ul.change {
+    right: 0;
+  }
+  .heroe {
+    height: 100vh;
+  }
+  .heroe .rectangle {
+    height: 70%;
+    width: 200px;
+    left: 19%;
+    top: 0%;
+    -webkit-transform: translate(-19%, 0%);
+            transform: translate(-19%, 0%);
+    margin: auto 0;
+  }
+  .heroe .rectangle .dots {
+    top: -14%;
+    right: 92%;
+  }
+  .heroe .rectangle .dots .triangle {
+    bottom: -30px;
+    height: 80px;
+  }
+  .heroe .rectangle .dots .dot {
+    height: 80px;
+  }
+  .heroe .rectangle .dots-2 {
+    bottom: -25%;
+    left: 20%;
+  }
+  .heroe .rectangle .dots-2 .triangle {
+    position: relative;
+    right: -30px;
+    height: 80px;
+  }
+  .heroe .rectangle .dots-2 .dot {
+    position: relative;
+    height: 80px;
+  }
+  .heroe .main-text {
+    left: 0;
+  }
+  .heroe .main-text h1 {
+    font-size: 30px;
+  }
+  .heroe .main-text p {
+    font-size: 20px;
+  }
+  .industry {
+    margin: 30px auto;
+  }
+  .industry h2 {
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .industry h2:nth-of-type(2) {
+    text-align: left;
+  }
+  .industry p {
+    font-size: 20px;
+    padding-bottom: 70px;
+  }
+  .industry > div {
+    padding: 0 20px;
+  }
+  .industry > div .company {
+    height: 300px;
+  }
+  .industry > div .company img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .industry > div .company .text {
+    bottom: 0%;
+  }
+  .industry > div .company .text a {
+    opacity: 1;
+  }
+  .industry > div ul.nav li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 20px;
+    width: calc(100%/3.5);
+  }
+  .industry > div ul.nav li a {
+    font-size: 20px;
+  }
+  .testimony {
+    height: 100vh;
+    margin: 30px 0 100px;
+  }
+  .testimony > div {
+    overflow: hidden;
+  }
+  .testimony > div > div {
+    position: absolute;
+    top: 30%;
+    -webkit-transform: translate(auto, -37%);
+            transform: translate(auto, -37%);
+  }
+  .testimony > div > div .test-caption {
+    width: 570px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    display: block;
+  }
+  .testimony > div > div .test-caption img {
+    height: 300px;
+    width: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-right: 20px;
+  }
+  .testimony > div > div .test-caption .test-card {
+    height: 150px;
+    width: 70%;
+    top: 70%;
+    right: 20%;
+    padding-top: 0;
+  }
+  .testimony > div > div .test-caption .test-card p {
+    font-size: 15px;
+    padding: 10px 15px;
+    line-height: 30px;
+  }
+  .testimony > div > div .test-caption .test-card p sup {
+    padding-right: 10px;
+  }
+  .testimony > div > div .test-caption .test-card h5 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .testimony > div > div .test-caption .test-card .control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 120px;
+    position: relative;
+    margin-left: auto;
+    bottom: 10px;
+  }
+  .testimony > div > div .test-caption .test-card .control a {
+    height: 30px;
+    width: 30px;
+  }
+  .testimony > div > div .test-caption .test-card .control a span {
+    font-size: 20px;
+  }
+  .testimony > div > div .company-review p {
+    font-family: 'roman';
+    font-size: 20px;
+    color: #fff;
+  }
+  .testimony > div > div .company-review p:nth-of-type(2) {
+    padding-top: 20px;
+    padding-right: 60px;
+  }
+  .testimony > div > div .company-review h2 {
+    font-size: 30px;
+    padding: 20px 0 30px 0;
+    color: #fff;
+  }
+  .testimony > div > div .company-review hr.line {
+    width: 120px;
+    height: 5px;
+    background-color: #fff;
+    margin: initial;
+    border: none;
+  }
+  .scenario {
+    margin: 30px auto;
+  }
+  .scenario h2 {
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .scenario .biz-case {
+    text-align: left;
+  }
+  .scenario .biz-case img {
+    height: 70px;
+  }
+  .scenario .biz-case h3 {
+    padding-left: 0;
+  }
+  .scenario .biz-case ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 0px;
+  }
+  .scenario .biz-case ul li {
+    margin-right: 12px;
+  }
+  .scenario .tab-content {
+    margin-left: 0px;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px 0;
+  }
+  .form .bussiness-tag {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .form .bussiness-tag img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .form .bussiness-tag .biz-card {
+    bottom: 0%;
+    background: #f6c139;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  .form .bussiness-tag .biz-card h2 {
+    font-size: 24px;
+  }
+  .form form {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .form form h2 {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+  .form form p {
+    font-size: 18px;
+    padding-bottom: 24px;
+  }
+  footer .newsletter h2 {
+    font-size: 30px;
+  }
+  footer .newsletter .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .newsletter .inputs input {
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+  }
+  footer .cont-details {
+    padding: 60px 0;
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+    margin: 30px 0;
+  }
+  footer .cont-details .detail-1 {
+    margin-bottom: 30px;
+  }
+  footer .cont-details .detail-1 img {
+    padding-bottom: 0px;
+    height: 170px;
+    text-align: left;
+  }
+  footer .cont-details .detail-1 p {
+    font-family: 'roman';
+    line-height: 20px;
+    font-size: 20px;
+  }
+  footer .cont-details .detail-2 {
+    padding-left: 0px;
+  }
+  footer .cont-details .detail-2 h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  footer .cont-details .detail-2 p {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  footer .cont-details .detail-2 p i {
+    padding-right: 20px;
+  }
+  footer .bottom p {
+    font-size: 17px;
+  }
+  footer .bottom .icons a {
+    height: 40px;
+    width: 40px;
+    background: #000;
+    color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  footer .bottom .icons a i {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+  }
+  footer .bottom .icons a i:hover {
+    color: #f6c139;
+  }
+  .about {
+    margin: 30px auto;
+  }
+  .about .about-text p {
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
+  .about .about-text h2 {
+    font-size: 30px;
+  }
+  .about .caption {
+    right: -7%;
+  }
+  .about .caption .border-img {
+    height: 400px;
+  }
+  .client {
+    margin: 30px auto;
+  }
+  .client > div > :first-child > div:first-child {
+    padding-left: 20px;
+  }
+  .client > div > div:last-child img {
+    height: 150px;
+    width: auto;
+    margin: auto;
+  }
+  .client > div > div:last-child .owl-dots {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
