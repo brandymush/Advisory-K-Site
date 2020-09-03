@@ -80,19 +80,46 @@
             <img src="Imgs/abt 1.jpg" alt="woman in ofice" class="img-fluid">
             <div class="circle">
               <div class="inner">
-                <a  href="http://www.youtube.com/embed/W7qWa52k-nE"
+                <!-- <a  href="http://www.youtube.com/embed/W7qWa52k-nE"
                      width="560" height="315" frameborder="0" allowfullscreen>
                   <i class="fa fa-play"></i>
+                </a> -->
+                <a href="#videoStory" class="button more" id="videoLink" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-play"></i>
                 </a>
               </div>
             </div>
             
-    
+             
 
             </div>
          </div>
         </div>
      </div>
+     <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog m-auto modal-dialog-centered" role="document" style="width: 100%;">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+      <div id="videoStory" class="mfp-hide w-80" style="margin: 0 auto;">
+       <iframe  height="480" src="https://www.youtube.com/embed/oXoe3GWygq0?rel=0" frameborder="0" allowfullscreen style="width:100%;"> </iframe>
+                 </div>
+      </div>
+       <button type="button" class="btn" data-dismiss="modal" style="background: rgb(246, 193, 57);;">Close</button>
+     
+    </div>
+      
+  </div>
+  
+     
+   
+     
+</div>
+     
   </section>
 </div>
 
@@ -552,7 +579,13 @@
 </footer>
 
 <!-- footer -->
-
+<script>
+   $('#videoLink')
+.magnificPopup({
+	  type:'inline',
+	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  })
+</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
