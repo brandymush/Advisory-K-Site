@@ -408,7 +408,7 @@ input,::placeholder{color: #000;}
         
      
      }
-     ul{ flex-direction: column;position: absolute;top:100%;background-color:rgb(246, 193, 57);z-index: 999;width:100%;height:40vh;padding:20px 30px;right:100%;transition:all .5s ease-in-out;
+     ul{ flex-direction: column;position: absolute;top:100%;background-color:rgb(246, 193, 57);z-index: 999;width:100%;height:260px;padding:20px 30px;right:100%;transition:all .5s ease-in-out;
         li{padding-left:20px;padding-bottom:20px;
             a{font-family:'roman';color:#000;font-size:24px;text-decoration: none;
                &:hover{color:#fff;text-decoration: none;}
@@ -497,12 +497,12 @@ input,::placeholder{color: #000;}
 
     // TESTIMONIALS
 
-      .testimony{margin-bottom:160px;height:60vh;margin-top:30px;
+      .testimony{margin-bottom:30px;height:600px;margin-top:30px;
            
           >div{
             >div{position: absolute;top:0%;transform:translate(auto,0%);flex-wrap:wrap-reverse;
           
-           .test-caption{width:100%;height:400px;position: relative;
+           .test-caption{width:100%;height:400px;position: relative;top:30px;
            p{padding: 0;}
                img{height:145px;width:100%;object-fit: cover;position: relative;z-index: 999;}
                .test-card{height: 240px; width:320px;top:60%;right: -165px;
@@ -597,18 +597,20 @@ input,::placeholder{color: #000;}
       // ends
  footer{padding:20px 0;
           .newsletter{flex-direction: column;
-              h2{font-size:40px;margin-bottom:20px;}
+              h2{font-size:24px;margin-bottom:20px;}
               .inputs{
-                 input{width:100%;}
+                 input{width:100%;font-size:14px ;}
                 
               }
           }
           .cont-details{
               .detail-1{
                  img{height: 170px;width: 100%;object-fit: cover;}
-                 p{padding:20px 0;}
+                 p{padding:20px 0;font-size: 18px;}
               }
-              .detail-2{padding-left: 0;}
+              .detail-2{padding-left: 0;
+                p{font-size:18px;padding-bottom:18px;}
+              }
              
              
               
