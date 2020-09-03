@@ -13,6 +13,12 @@ $('.menu').click(function(){
     $('header ul').toggleClass('change');
 });
 
+
+$('a.carousel').click(function (e) {
+  e.preventDefault();
+});
+
+
 $('.carousel').carousel();
 
 var owl= $('.owl-carousel');
