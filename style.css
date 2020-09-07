@@ -95,7 +95,7 @@ input, ::placeholder {
   color: #000;
 }
 
-header {
+body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,27 +109,27 @@ header {
   padding: 0 50px;
 }
 
-header img {
+body header img {
   height: 120px;
 }
 
-header ul li {
-  padding-right: 20px;
+body header ul li {
+  padding-right: 40px;
 }
 
-header ul li a {
+body header ul li a {
   font-family: 'roman';
   color: #000;
   font-size: 24px;
   text-decoration: none;
 }
 
-header ul li a:hover {
+body header ul li a:hover {
   color: #f6c139;
   text-decoration: none;
 }
 
-.heroe {
+body .heroe {
   background-image: url(./Imgs/Banner.jpg);
   height: 85vh;
   background-size: cover;
@@ -142,7 +142,7 @@ header ul li a:hover {
   overflow: hidden;
 }
 
-.heroe .overlay {
+body .heroe .overlay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -150,7 +150,7 @@ header ul li a:hover {
   opacity: .4;
 }
 
-.heroe .rectangle {
+body .heroe .rectangle {
   position: relative;
   height: 420px;
   width: 200px;
@@ -160,13 +160,13 @@ header ul li a:hover {
           transform: translate(-19%, -40%);
 }
 
-.heroe .rectangle img.border-img {
+body .heroe .rectangle img.border-img {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-.heroe .rectangle .dots {
+body .heroe .rectangle .dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,18 +185,18 @@ header ul li a:hover {
   right: 92%;
 }
 
-.heroe .rectangle .dots .triangle {
+body .heroe .rectangle .dots .triangle {
   position: relative;
   bottom: -50px;
   height: 120px;
 }
 
-.heroe .rectangle .dots .dot {
+body .heroe .rectangle .dots .dot {
   position: relative;
   height: 120px;
 }
 
-.heroe .rectangle .dots-2 {
+body .heroe .rectangle .dots-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,18 +215,18 @@ header ul li a:hover {
   left: 20%;
 }
 
-.heroe .rectangle .dots-2 .triangle {
+body .heroe .rectangle .dots-2 .triangle {
   position: relative;
   right: -50px;
   height: 120px;
 }
 
-.heroe .rectangle .dots-2 .dot {
+body .heroe .rectangle .dots-2 .dot {
   position: relative;
   height: 120px;
 }
 
-.heroe .main-text {
+body .heroe .main-text {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -236,33 +236,33 @@ header ul li a:hover {
   left: 120px;
 }
 
-.heroe .main-text p {
+body .heroe .main-text p {
   color: #fff;
   font-size: 38px;
   font-family: 'roman';
   padding-bottom: 24px;
 }
 
-.heroe .main-text h1 {
+body .heroe .main-text h1 {
   color: #fff;
   font-family: 'bold';
   font-size: 43px;
   padding-bottom: 20px;
 }
 
-.about .about-text p {
+body .about .about-text p {
   font-size: 22px;
   font-family: 'roman';
   line-height: 40px;
   padding-bottom: 30px;
 }
 
-.about .about-text h2 {
+body .about .about-text h2 {
   line-height: 50px;
   padding-bottom: 30px;
 }
 
-.about .caption {
+body .about .caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,14 +278,14 @@ header ul li a:hover {
   right: -10%;
 }
 
-.about .caption img.bg-img {
+body .about .caption img.bg-img {
   height: 330px;
   width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.about .caption .border-img {
+body .about .caption .border-img {
   margin: auto;
   position: absolute;
   width: auto;
@@ -293,7 +293,7 @@ header ul li a:hover {
   z-index: -1;
 }
 
-.about .caption .iframe {
+body .about .caption .iframe {
   width: 420px;
   height: 300px;
   position: absolute;
@@ -310,14 +310,14 @@ header ul li a:hover {
           justify-content: center;
 }
 
-.about .caption .iframe img {
+body .about .caption .iframe img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.about .caption .iframe .circle {
+body .about .caption .iframe .circle {
   height: 200px;
   width: 200px;
   border: 3px dotted #000;
@@ -334,7 +334,7 @@ header ul li a:hover {
   position: absolute;
 }
 
-.about .caption .iframe .circle .inner {
+body .about .caption .iframe .circle .inner {
   height: 150px;
   width: 150px;
   border: 3px dotted #000;
@@ -350,7 +350,7 @@ header ul li a:hover {
           align-items: center;
 }
 
-.about .caption .iframe .circle .inner a {
+body .about .caption .iframe .circle .inner a {
   border: 10px solid #000;
   background-color: #f6c139;
   height: 100px;
@@ -368,37 +368,37 @@ header ul li a:hover {
   text-decoration: none;
 }
 
-.about .caption .iframe .circle .inner a i {
+body .about .caption .iframe .circle .inner a i {
   color: #000;
   font-size: 30px;
   text-decoration: none;
 }
 
-.industry h2 {
+body .industry h2 {
   text-align: center;
   padding-bottom: 25px;
 }
 
-.industry h2:nth-of-type(2) {
+body .industry h2:nth-of-type(2) {
   text-align: left;
 }
 
-.industry p {
+body .industry p {
   font-family: 'roman';
   text-align: center;
   font-size: 24px;
   padding-bottom: 70px;
 }
 
-.industry > div {
+body .industry > div {
   padding: 0 100px;
 }
 
-.industry > div > div > div {
+body .industry > div > div > div {
   margin-bottom: 30px;
 }
 
-.industry > div > div > div .company {
+body .industry > div > div > div .company {
   width: 100%;
   border-radius: 4px;
   display: -webkit-box;
@@ -410,9 +410,11 @@ header ul li a:hover {
   position: relative;
   height: 100%;
   overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.industry > div > div > div .company .overlay {
+body .industry > div > div > div .company .overlay {
   background: #000;
   position: absolute;
   top: 0;
@@ -422,12 +424,12 @@ header ul li a:hover {
   opacity: .4;
 }
 
-.industry > div > div > div .company img {
+body .industry > div > div > div .company img {
   width: 100%;
   height: 100%;
 }
 
-.industry > div > div > div .company .text {
+body .industry > div > div > div .company .text {
   position: absolute;
   z-index: 999;
   color: #fff;
@@ -443,25 +445,25 @@ header ul li a:hover {
           justify-content: center;
   height: 100%;
   padding: 30px 20px;
-  bottom: -50%;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  bottom: 0%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.industry > div > div > div .company .text p {
+body .industry > div > div > div .company .text p {
   font-size: 17px;
   text-align: left;
   padding-bottom: 0;
   line-height: 25px;
 }
 
-.industry > div > div > div .company .text h4 {
+body .industry > div > div > div .company .text h4 {
   font-size: 30px;
   font-family: 'bold';
   padding-bottom: 25px;
 }
 
-.industry > div > div > div .company .text a {
+body .industry > div > div > div .company .text a {
   font-size: 24px;
   color: white;
   border: 4px solid #fff;
@@ -485,90 +487,27 @@ header ul li a:hover {
   text-decoration: none;
 }
 
-.industry > div > div > div .company:hover {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.industry > div > div > div .company:hover .text {
-  position: absolute;
-  z-index: 999;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  padding: 30px 20px;
-  top: 0;
-  bottom: 0;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.industry > div > div > div .company:hover .text p {
-  font-size: 17px;
-  text-align: left;
-  padding-bottom: 0;
-  line-height: 25px;
-}
-
-.industry > div > div > div .company:hover .text h4 {
-  font-size: 30px;
-  font-family: 'bold';
-  padding-bottom: 25px;
-}
-
-.industry > div > div > div .company:hover .text a {
-  font-size: 24px;
-  color: white;
-  border: 4px solid #fff;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 100%;
-  height: 35px;
-  width: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 24px;
-  opacity: 1;
-}
-
-.industry > div ul.nav {
+body .industry > div ul.nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.industry > div ul.nav li {
+body .industry > div ul.nav li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 30px;
   width: calc(100%/5);
 }
 
-.industry > div ul.nav li a {
+body .industry > div ul.nav li a {
   font-size: 24px;
   color: #000;
   font-family: 'roman';
   text-decoration: none;
 }
 
-.testimony {
+body .testimony {
   background-image: url(./Imgs/Testimonialsbanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -580,7 +519,7 @@ header ul li a:hover {
   z-index: 999;
 }
 
-.testimony .overlay {
+body .testimony .overlay {
   top: 0;
   right: 0;
   bottom: 0;
@@ -590,14 +529,14 @@ header ul li a:hover {
   position: absolute;
 }
 
-.testimony > div > div {
+body .testimony > div > div {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(auto, -50%);
           transform: translate(auto, -50%);
 }
 
-.testimony > div > div .test-caption {
+body .testimony > div > div .test-caption {
   width: 100%;
   height: 500px;
   position: relative;
@@ -609,7 +548,7 @@ header ul li a:hover {
           justify-content: center;
 }
 
-.testimony > div > div .test-caption img {
+body .testimony > div > div .test-caption img {
   height: 500px;
   width: 500px;
   -o-object-fit: cover;
@@ -617,7 +556,7 @@ header ul li a:hover {
   margin: auto;
 }
 
-.testimony > div > div .test-caption .test-card {
+body .testimony > div > div .test-caption .test-card {
   height: 200px;
   width: 800px;
   background-color: #f6c139;
@@ -639,23 +578,23 @@ header ul li a:hover {
   padding-top: 20px;
 }
 
-.testimony > div > div .test-caption .test-card p {
+body .testimony > div > div .test-caption .test-card p {
   font-size: 28px;
   font-family: 'roman';
   padding: 10px 15px;
   line-height: 30px;
 }
 
-.testimony > div > div .test-caption .test-card p sup {
+body .testimony > div > div .test-caption .test-card p sup {
   padding-right: 10px;
 }
 
-.testimony > div > div .test-caption .test-card h5 {
+body .testimony > div > div .test-caption .test-card h5 {
   font-size: 30px;
   padding-top: 30px;
 }
 
-.testimony > div > div .test-caption .test-card .control {
+body .testimony > div > div .test-caption .test-card .control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,7 +606,7 @@ header ul li a:hover {
   bottom: 10px;
 }
 
-.testimony > div > div .test-caption .test-card .control button {
+body .testimony > div > div .test-caption .test-card .control button {
   border-radius: 100%;
   border: 4px solid #000;
   height: 50px;
@@ -686,29 +625,29 @@ header ul li a:hover {
   outline: none;
 }
 
-.testimony > div > div .test-caption .test-card .control button span {
+body .testimony > div > div .test-caption .test-card .control button span {
   color: #000;
   font-size: 30px;
 }
 
-.testimony > div > div .company-review p {
+body .testimony > div > div .company-review p {
   font-family: 'roman';
   font-size: 28px;
   color: #fff;
 }
 
-.testimony > div > div .company-review p:nth-of-type(2) {
+body .testimony > div > div .company-review p:nth-of-type(2) {
   padding-top: 20px;
   padding-right: 60px;
 }
 
-.testimony > div > div .company-review h2 {
+body .testimony > div > div .company-review h2 {
   font-size: 30px;
   padding: 20px 0 30px 0;
   color: #fff;
 }
 
-.testimony > div > div .company-review hr.line {
+body .testimony > div > div .company-review hr.line {
   width: 120px;
   height: 5px;
   background-color: #fff;
@@ -716,25 +655,25 @@ header ul li a:hover {
   border: none;
 }
 
-.scenario h2 {
+body .scenario h2 {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.scenario .biz-case {
+body .scenario .biz-case {
   text-align: left;
 }
 
-.scenario .biz-case img {
+body .scenario .biz-case img {
   height: 120px;
 }
 
-.scenario .biz-case h3 {
+body .scenario .biz-case h3 {
   padding: 0px 0 40px 24px;
   font-size: 30px;
 }
 
-.scenario .biz-case ul {
+body .scenario .biz-case ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -742,7 +681,7 @@ header ul li a:hover {
   padding-left: 24px;
 }
 
-.scenario .biz-case ul li {
+body .scenario .biz-case ul li {
   margin-bottom: 20px;
   height: 30px;
   display: -webkit-box;
@@ -753,7 +692,7 @@ header ul li a:hover {
           align-items: center;
 }
 
-.scenario .biz-case ul li a {
+body .scenario .biz-case ul li a {
   color: #fff;
   height: 100%;
   width: 100%;
@@ -769,12 +708,12 @@ header ul li a:hover {
   background-color: gray;
 }
 
-.scenario .biz-case ul li a.active {
+body .scenario .biz-case ul li a.active {
   background-color: #000;
   color: #f6c139;
 }
 
-.scenario .tab-content {
+body .scenario .tab-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,21 +731,21 @@ header ul li a:hover {
   margin-left: 110px;
 }
 
-.scenario .tab-content h3 {
+body .scenario .tab-content h3 {
   font-size: 30px;
   padding-bottom: 20px;
 }
 
-.scenario .tab-content h3:nth-of-type(2) {
+body .scenario .tab-content h3:nth-of-type(2) {
   padding-top: 30px;
 }
 
-.scenario .tab-content p {
+body .scenario .tab-content p {
   font-size: 18px;
   line-height: 30px;
 }
 
-.form {
+body .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,36 +754,36 @@ header ul li a:hover {
   height: 100%;
 }
 
-.form ::-webkit-input-placeholder {
+body .form ::-webkit-input-placeholder {
   color: #000;
 }
 
-.form :-ms-input-placeholder {
+body .form :-ms-input-placeholder {
   color: #000;
 }
 
-.form ::-ms-input-placeholder {
+body .form ::-ms-input-placeholder {
   color: #000;
 }
 
-.form ::placeholder {
+body .form ::placeholder {
   color: #000;
 }
 
-.form .bussiness-tag {
+body .form .bussiness-tag {
   width: 500px;
   height: 550px;
   position: relative;
 }
 
-.form .bussiness-tag img {
+body .form .bussiness-tag img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.form .bussiness-tag .biz-card {
+body .form .bussiness-tag .biz-card {
   position: absolute;
   top: 50%;
   background: #f6c139;
@@ -869,11 +808,11 @@ header ul li a:hover {
   line-height: 50px;
 }
 
-.form .bussiness-tag .biz-card h2 {
+body .form .bussiness-tag .biz-card h2 {
   font-size: 24px;
 }
 
-.form .bussiness-tag .biz-card hr.hr {
+body .form .bussiness-tag .biz-card hr.hr {
   height: 3px;
   width: 100px;
   background: #000;
@@ -882,21 +821,21 @@ header ul li a:hover {
   right: -20%;
 }
 
-.form form {
+body .form form {
   width: 440px;
 }
 
-.form form h2 {
+body .form form h2 {
   padding-bottom: 20px;
 }
 
-.form form p {
+body .form form p {
   font-size: 24px;
   font-family: 'roman';
   padding-bottom: 24px;
 }
 
-.form form input, .form form textarea {
+body .form form input, body .form form textarea {
   border: none;
   border-bottom: 1px solid #000;
   border-radius: 0;
@@ -908,31 +847,31 @@ header ul li a:hover {
   padding-left: 0;
 }
 
-.form form input > ::-webkit-input-placeholder, .form form textarea > ::-webkit-input-placeholder {
+body .form form input > ::-webkit-input-placeholder, body .form form textarea > ::-webkit-input-placeholder {
   font-size: 30px;
   font-family: 'roman';
 }
 
-.form form input > :-ms-input-placeholder, .form form textarea > :-ms-input-placeholder {
+body .form form input > :-ms-input-placeholder, body .form form textarea > :-ms-input-placeholder {
   font-size: 30px;
   font-family: 'roman';
 }
 
-.form form input > ::-ms-input-placeholder, .form form textarea > ::-ms-input-placeholder {
+body .form form input > ::-ms-input-placeholder, body .form form textarea > ::-ms-input-placeholder {
   font-size: 30px;
   font-family: 'roman';
 }
 
-.form form input > ::placeholder, .form form textarea > ::placeholder {
+body .form form input > ::placeholder, body .form form textarea > ::placeholder {
   font-size: 30px;
   font-family: 'roman';
 }
 
-.form form input:focus, .form form textarea:focus {
+body .form form input:focus, body .form form textarea:focus {
   border-bottom: 1.5px solid #f6c139;
 }
 
-.form form input[type="submit"] {
+body .form form input[type="submit"] {
   padding-bottom: 0;
   height: 60px;
   background-color: #000;
@@ -940,13 +879,13 @@ header ul li a:hover {
   width: 200px;
 }
 
-.client > div > :first-child {
+body .client > div > :first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.client > div > :first-child p {
+body .client > div > :first-child p {
   font-size: 22px;
   font-family: 'roman';
   padding-bottom: 20px;
@@ -956,25 +895,25 @@ header ul li a:hover {
   line-height: 30px;
 }
 
-.client > div > :first-child h2 {
+body .client > div > :first-child h2 {
   font-size: 30px;
   padding-bottom: 20px;
 }
 
-.client > div > :first-child > div:first-child {
+body .client > div > :first-child > div:first-child {
   padding-left: 100px;
 }
 
-.client > div > div:last-child img {
+body .client > div > div:last-child img {
   height: 160px;
 }
 
-.client > div > div:last-child .owl-nav {
+body .client > div > div:last-child .owl-nav {
   margin: auto;
   text-align: center;
 }
 
-.client > div > div:last-child .owl-nav button {
+body .client > div > div:last-child .owl-nav button {
   height: 50px;
   width: 50px;
   border: 3px solid #f6c139;
@@ -983,11 +922,11 @@ header ul li a:hover {
   border-radius: 100%;
 }
 
-.client > div > div:last-child .owl-dots {
+body .client > div > div:last-child .owl-dots {
   text-align: center;
 }
 
-.client > div > div:last-child .owl-dots button {
+body .client > div > div:last-child .owl-dots button {
   height: 15px;
   width: 15px;
   background-color: #f6c139;
@@ -996,16 +935,16 @@ header ul li a:hover {
   outline: 0;
 }
 
-.client > div > div:last-child .owl-dots button.active {
+body .client > div > div:last-child .owl-dots button.active {
   background: #000;
 }
 
-footer {
+body footer {
   background-color: #f6c139;
   padding: 60px 0;
 }
 
-footer .newsletter {
+body footer .newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,11 +957,11 @@ footer .newsletter {
   margin-bottom: 60px;
 }
 
-footer .newsletter h2 {
+body footer .newsletter h2 {
   font-size: 40px;
 }
 
-footer .newsletter .inputs {
+body footer .newsletter .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,7 +970,7 @@ footer .newsletter .inputs {
           justify-content: center;
 }
 
-footer .newsletter .inputs input {
+body footer .newsletter .inputs input {
   width: 400px;
   height: 60px;
   font-size: 30px;
@@ -1043,7 +982,7 @@ footer .newsletter .inputs input {
   background-color: #f6c139;
 }
 
-footer .newsletter .inputs button {
+body footer .newsletter .inputs button {
   height: 60px;
   background-color: #000;
   width: 100px;
@@ -1054,53 +993,53 @@ footer .newsletter .inputs button {
   font-size: 30px;
 }
 
-footer .newsletter .inputs button:hover i {
+body footer .newsletter .inputs button:hover i {
   color: #f6c139;
 }
 
-footer .cont-details {
+body footer .cont-details {
   padding: 60px 0;
   border-top: 1px solid #4d4d4d;
   border-bottom: 1px solid #4d4d4d;
   margin: 30px 0;
 }
 
-footer .cont-details .detail-1 img {
+body footer .cont-details .detail-1 img {
   padding-bottom: 0px;
   height: 170px;
   text-align: left;
 }
 
-footer .cont-details .detail-1 p {
+body footer .cont-details .detail-1 p {
   font-family: 'roman';
   line-height: 30px;
   font-size: 26px;
 }
 
-footer .cont-details .detail-2 {
+body footer .cont-details .detail-2 {
   padding-left: 50px;
 }
 
-footer .cont-details .detail-2 h2 {
+body footer .cont-details .detail-2 h2 {
   font-size: 30px;
   padding-bottom: 30px;
 }
 
-footer .cont-details .detail-2 p {
+body footer .cont-details .detail-2 p {
   padding-bottom: 50px;
   font-size: 26px;
 }
 
-footer .cont-details .detail-2 p i {
+body footer .cont-details .detail-2 p i {
   padding-right: 20px;
 }
 
-footer .cont-details .detail-3 h2 {
+body footer .cont-details .detail-3 h2 {
   font-size: 30px;
   padding-bottom: 30px;
 }
 
-footer .cont-details .detail-3 .col-6 {
+body footer .cont-details .detail-3 .col-6 {
   overflow: hidden;
   padding: 0 10px !important;
   display: -webkit-box;
@@ -1114,7 +1053,7 @@ footer .cont-details .detail-3 .col-6 {
           justify-content: center;
 }
 
-footer .cont-details .detail-3 img {
+body footer .cont-details .detail-3 img {
   width: 100%;
   height: 80px;
   margin: 10px;
@@ -1122,7 +1061,7 @@ footer .cont-details .detail-3 img {
      object-fit: cover;
 }
 
-footer .bottom {
+body footer .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,11 +1073,11 @@ footer .bottom {
           align-items: center;
 }
 
-footer .bottom p {
+body footer .bottom p {
   font-size: 26px;
 }
 
-footer .bottom .icons a {
+body footer .bottom .icons a {
   height: 40px;
   width: 40px;
   background: #000;
@@ -1154,7 +1093,7 @@ footer .bottom .icons a {
   border-radius: 10px;
 }
 
-footer .bottom .icons a i {
+body footer .bottom .icons a i {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1165,17 +1104,17 @@ footer .bottom .icons a i {
   font-size: 20px;
 }
 
-footer .bottom .icons a i:hover {
+body footer .bottom .icons a i:hover {
   color: #f6c139;
 }
 
 @media (max-width: 568px) and (min-width: 568px) {
-  .testimony {
+  body .testimony {
     margin-bottom: 160px;
     height: 60vh;
     margin-top: 30px;
   }
-  .testimony > div > div {
+  body .testimony > div > div {
     position: absolute;
     top: 15% !important;
     -webkit-transform: translate(auto, 0%);
@@ -1183,15 +1122,15 @@ footer .bottom .icons a i:hover {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
   }
-  .testimony > div > div .test-caption {
+  body .testimony > div > div .test-caption {
     width: 523px !important;
     height: 400px;
     position: relative;
   }
-  .testimony > div > div .test-caption p {
+  body .testimony > div > div .test-caption p {
     padding: 0;
   }
-  .testimony > div > div .test-caption img {
+  body .testimony > div > div .test-caption img {
     height: 145px;
     width: 100%;
     -o-object-fit: cover;
@@ -1199,71 +1138,73 @@ footer .bottom .icons a i:hover {
     position: relative;
     z-index: 999;
   }
-  .testimony > div > div .test-caption .test-card {
-    height: 240px;
+  body .testimony > div > div .test-caption .test-card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 320px;
     top: 60%;
     right: -165px;
     z-index: 9999;
   }
-  .testimony > div > div .test-caption .test-card p {
+  body .testimony > div > div .test-caption .test-card p {
     font-size: 12px;
   }
-  .testimony > div > div .test-caption .test-card h5 {
+  body .testimony > div > div .test-caption .test-card h5 {
     padding-top: 0px;
   }
-  .testimony > div > div .test-caption .test-card .control {
+  body .testimony > div > div .test-caption .test-card .control {
     bottom: -5px;
     right: 0;
   }
-  .testimony > div > div .test-caption .test-card .control a {
+  body .testimony > div > div .test-caption .test-card .control a {
     height: 34px;
     width: 34px;
   }
-  .testimony > div > div .company-review {
+  body .testimony > div > div .company-review {
     padding: 15px 0;
   }
-  .testimony > div > div .company-review p {
+  body .testimony > div > div .company-review p {
     font-family: 'roman';
     font-size: 18px;
     color: #fff;
   }
-  .testimony > div > div .company-review p:nth-of-type(2) {
+  body .testimony > div > div .company-review p:nth-of-type(2) {
     padding-top: 20px;
     padding-right: 0px;
   }
-  .about {
+  body .about {
     margin: 30px 0;
   }
-  .about .about-text {
+  body .about .about-text {
     margin-bottom: 30px;
   }
-  .about .about-text h2 {
+  body .about .about-text h2 {
     line-height: 30px;
     padding-bottom: 30px;
     font-size: 30px;
   }
-  .about .caption {
+  body .about .caption {
     position: relative;
     right: 0% !important;
   }
-  .about .caption img.bg-img {
+  body .about .caption img.bg-img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .about .caption .border-img {
+  body .about .caption .border-img {
     width: 100%;
     height: 500px;
   }
-  .about .caption .iframe {
+  body .about .caption .iframe {
     width: 100%;
     height: 100%;
     position: absolute;
     right: 0%;
     bottom: 0% !important;
   }
-  .about .caption .iframe img {
+  body .about .caption .iframe img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -1272,17 +1213,17 @@ footer .bottom .icons a i:hover {
 }
 
 @media (max-width: 576px) {
-  header {
+  body header {
     padding: 0 0px;
     position: relative;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  header img {
+  body header img {
     height: 120px;
   }
-  header .menu {
+  body header .menu {
     height: 40px;
     width: 40px;
     margin-right: 20px;
@@ -1297,7 +1238,7 @@ footer .bottom .icons a i:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header .menu span {
+  body header .menu span {
     display: block;
     height: 4px;
     width: 100%;
@@ -1307,24 +1248,24 @@ footer .bottom .icons a i:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  header .menu span:nth-of-type(2) {
+  body header .menu span:nth-of-type(2) {
     margin: 5px 0;
   }
-  header .menu span.change:nth-of-type(2) {
+  body header .menu span.change:nth-of-type(2) {
     opacity: 0;
   }
-  header .menu span.change:nth-of-type(1) {
+  body header .menu span.change:nth-of-type(1) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  header .menu span.change:nth-of-type(3) {
+  body header .menu span.change:nth-of-type(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  header .menu .change {
+  body header .menu .change {
     background-color: #000;
   }
-  header ul {
+  body header ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1340,27 +1281,27 @@ footer .bottom .icons a i:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  header ul li {
+  body header ul li {
     padding-left: 20px;
     padding-bottom: 20px;
   }
-  header ul li a {
+  body header ul li a {
     font-family: 'roman';
     color: #000;
     font-size: 24px;
     text-decoration: none;
   }
-  header ul li a:hover {
+  body header ul li a:hover {
     color: #fff;
     text-decoration: none;
   }
-  header ul.change {
+  body header ul.change {
     right: 0;
   }
-  .heroe {
+  body .heroe {
     height: 500px;
   }
-  .heroe .rectangle {
+  body .heroe .rectangle {
     left: 14%;
     top: 0%;
     -webkit-transform: translate(14%, 0%);
@@ -1368,7 +1309,7 @@ footer .bottom .icons a i:hover {
     margin: auto;
     height: 312px;
   }
-  .heroe .rectangle .dots {
+  body .heroe .rectangle .dots {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1386,16 +1327,16 @@ footer .bottom .icons a i:hover {
     top: -10%;
     right: 92%;
   }
-  .heroe .rectangle .dots .triangle {
+  body .heroe .rectangle .dots .triangle {
     position: relative;
     bottom: -30px;
     height: 80px;
   }
-  .heroe .rectangle .dots .dot {
+  body .heroe .rectangle .dots .dot {
     position: relative;
     height: 80px;
   }
-  .heroe .rectangle .dots-2 {
+  body .heroe .rectangle .dots-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1413,16 +1354,16 @@ footer .bottom .icons a i:hover {
     bottom: -18%;
     left: 20%;
   }
-  .heroe .rectangle .dots-2 .triangle {
+  body .heroe .rectangle .dots-2 .triangle {
     position: relative;
     right: -30px;
     height: 80px;
   }
-  .heroe .rectangle .dots-2 .dot {
+  body .heroe .rectangle .dots-2 .dot {
     position: relative;
     height: 80px;
   }
-  .heroe .main-text {
+  body .heroe .main-text {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1431,100 +1372,100 @@ footer .bottom .icons a i:hover {
     position: relative;
     left: -30px;
   }
-  .heroe .main-text p {
+  body .heroe .main-text p {
     font-size: 18px;
   }
-  .heroe .main-text h1 {
+  body .heroe .main-text h1 {
     font-size: 26px;
   }
-  .about {
+  body .about {
     margin: 30px 0;
   }
-  .about .about-text {
+  body .about .about-text {
     margin-bottom: 30px;
   }
-  .about .about-text h2 {
+  body .about .about-text h2 {
     line-height: 30px;
     padding-bottom: 30px;
     font-size: 30px;
   }
-  .about .caption {
+  body .about .caption {
     position: relative;
     right: 0%;
   }
-  .about .caption img.bg-img {
+  body .about .caption img.bg-img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .about .caption .border-img {
+  body .about .caption .border-img {
     width: 100%;
     height: 500px;
   }
-  .about .caption .iframe {
+  body .about .caption .iframe {
     width: 100%;
     height: 100%;
     position: absolute;
     right: 0%;
     bottom: -30%;
   }
-  .about .caption .iframe img {
+  body .about .caption .iframe img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .industry {
+  body .industry {
     margin-bottom: 30px;
   }
-  .industry h2 {
+  body .industry h2 {
     padding-top: 30px;
     font-size: 24px;
   }
-  .industry h2:nth-of-type(2) {
+  body .industry h2:nth-of-type(2) {
     text-align: left;
   }
-  .industry p {
+  body .industry p {
     font-size: 20px;
     padding-bottom: 70px;
   }
-  .industry > div {
+  body .industry > div {
     padding: 0 20px;
   }
-  .industry > div > div > div {
+  body .industry > div > div > div {
     margin-bottom: 30px;
   }
-  .industry > div > div > div .company {
+  body .industry > div > div > div .company {
     height: 300px;
   }
-  .industry > div > div > div .company img {
+  body .industry > div > div > div .company img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .industry > div > div > div .company .text {
+  body .industry > div > div > div .company .text {
     bottom: 0%;
   }
-  .industry > div > div > div .company .text p {
+  body .industry > div > div > div .company .text p {
     font-size: 20px;
   }
-  .industry > div > div > div .company .text a {
+  body .industry > div > div > div .company .text a {
     opacity: 1;
   }
-  .industry > div ul.nav li {
+  body .industry > div ul.nav li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 20px;
     width: calc(100%/3.5);
   }
-  .industry > div ul.nav li a {
+  body .industry > div ul.nav li a {
     font-size: 14px;
   }
-  .testimony {
+  body .testimony {
     margin-bottom: 30px;
     height: 600px;
     margin-top: 30px;
   }
-  .testimony > div > div {
+  body .testimony > div > div {
     position: absolute;
     top: 0%;
     -webkit-transform: translate(auto, 0%);
@@ -1532,16 +1473,16 @@ footer .bottom .icons a i:hover {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
   }
-  .testimony > div > div .test-caption {
+  body .testimony > div > div .test-caption {
     width: 100%;
     height: 400px;
     position: relative;
     top: 30px;
   }
-  .testimony > div > div .test-caption p {
+  body .testimony > div > div .test-caption p {
     padding: 0;
   }
-  .testimony > div > div .test-caption img {
+  body .testimony > div > div .test-caption img {
     height: 145px;
     width: 100%;
     -o-object-fit: cover;
@@ -1549,64 +1490,73 @@ footer .bottom .icons a i:hover {
     position: relative;
     z-index: 999;
   }
-  .testimony > div > div .test-caption .test-card {
+  body .testimony > div > div .test-caption .test-card {
     height: 240px;
     width: 320px;
     top: 60%;
     right: -165px;
   }
-  .testimony > div > div .test-caption .test-card p {
+  body .testimony > div > div .test-caption .test-card p {
     font-size: 12px;
   }
-  .testimony > div > div .test-caption .test-card h5 {
+  body .testimony > div > div .test-caption .test-card h5 {
     padding-top: 0px;
   }
-  .testimony > div > div .test-caption .test-card .control {
+  body .testimony > div > div .test-caption .test-card .control {
     bottom: -5px;
     right: 0;
   }
-  .testimony > div > div .test-caption .test-card .control a {
+  body .testimony > div > div .test-caption .test-card .control a {
     height: 34px;
     width: 34px;
   }
-  .testimony > div > div .company-review {
+  body .testimony > div > div .company-review {
     padding: 15px 0;
   }
-  .testimony > div > div .company-review p {
+  body .testimony > div > div .company-review p {
     font-family: 'roman';
     font-size: 18px;
     color: #fff;
   }
-  .testimony > div > div .company-review p:nth-of-type(2) {
+  body .testimony > div > div .company-review p:nth-of-type(2) {
     padding-top: 20px;
     padding-right: 0px;
   }
-  .scenario {
+  body .scenario {
     margin: 50px 0;
   }
-  .scenario h2 {
+  body .scenario h2 {
     font-size: 25px;
   }
-  .scenario .biz-case {
+  body .scenario .biz-case {
     text-align: left;
   }
-  .scenario .biz-case h3 {
+  body .scenario .biz-case h3 {
     padding-left: 0;
   }
-  .scenario .biz-case ul {
+  body .scenario .biz-case ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     padding-left: 0px;
   }
-  .scenario .biz-case ul li {
+  body .scenario .biz-case ul li {
     margin-right: 12px;
   }
-  .scenario .tab-content {
+  body .scenario .biz-case ul li a {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .scenario .tab-content {
     margin-left: 0px;
   }
-  .form {
+  body .form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1617,119 +1567,119 @@ footer .bottom .icons a i:hover {
         flex-wrap: wrap;
     margin: 30px 0;
   }
-  .form .bussiness-tag {
+  body .form .bussiness-tag {
     width: 100%;
     height: 500px;
     margin-bottom: 20px;
   }
-  .form .bussiness-tag img {
+  body .form .bussiness-tag img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .form .bussiness-tag .biz-card {
+  body .form .bussiness-tag .biz-card {
     top: 0%;
     background: #f6c139;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
   }
-  .form .bussiness-tag .biz-card h2 {
+  body .form .bussiness-tag .biz-card h2 {
     font-size: 24px;
   }
-  .form form {
+  body .form form {
     width: 100%;
     padding: 0 12px;
   }
-  .form form h2 {
+  body .form form h2 {
     padding-bottom: 20px;
     font-size: 24px;
   }
-  .form form p {
+  body .form form p {
     font-size: 18px;
     padding-bottom: 24px;
   }
-  .client {
+  body .client {
     margin: 30px 0;
   }
-  .client > div > :first-child {
+  body .client > div > :first-child {
     padding: 0 15px;
   }
-  .client > div > :first-child > div:first-child {
+  body .client > div > :first-child > div:first-child {
     padding-left: 20px;
   }
-  .client > div > div:last-child img {
+  body .client > div > div:last-child img {
     height: 160px;
   }
-  .client > div > div:last-child .owl-dots {
+  body .client > div > div:last-child .owl-dots {
     display: none;
   }
-  footer {
+  body footer {
     padding: 20px 0;
   }
-  footer .newsletter {
+  body footer .newsletter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .newsletter h2 {
+  body footer .newsletter h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  footer .newsletter .inputs input {
+  body footer .newsletter .inputs input {
     width: 100%;
     font-size: 14px;
   }
-  footer .cont-details .detail-1 img {
+  body footer .cont-details .detail-1 img {
     height: 170px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  footer .cont-details .detail-1 p {
+  body footer .cont-details .detail-1 p {
     padding: 20px 0;
     font-size: 18px;
   }
-  footer .cont-details .detail-2 {
+  body footer .cont-details .detail-2 {
     padding-left: 0;
   }
-  footer .cont-details .detail-2 p {
+  body footer .cont-details .detail-2 p {
     font-size: 18px;
     padding-bottom: 18px;
   }
-  footer .bottom {
+  body footer .bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .bottom p {
+  body footer .bottom p {
     font-size: 20px;
     text-align: center;
   }
-  footer .bottom .icons {
+  body footer .bottom .icons {
     margin-top: 10px;
   }
-  footer .bottom .icons a {
+  body footer .bottom .icons a {
     margin-bottom: 10px;
   }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
-  header {
+  body header {
     padding: 0 0px;
     position: relative;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  header img {
+  body header img {
     height: 120px;
   }
-  header .menu {
+  body header .menu {
     height: 40px;
     width: 40px;
     margin-right: 20px;
@@ -1744,7 +1694,7 @@ footer .bottom .icons a i:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header .menu span {
+  body header .menu span {
     display: block;
     height: 4px;
     width: 100%;
@@ -1754,24 +1704,24 @@ footer .bottom .icons a i:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  header .menu span:nth-of-type(2) {
+  body header .menu span:nth-of-type(2) {
     margin: 5px 0;
   }
-  header .menu span.change:nth-of-type(2) {
+  body header .menu span.change:nth-of-type(2) {
     opacity: 0;
   }
-  header .menu span.change:nth-of-type(1) {
+  body header .menu span.change:nth-of-type(1) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  header .menu span.change:nth-of-type(3) {
+  body header .menu span.change:nth-of-type(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  header .menu .change {
+  body header .menu .change {
     background-color: #000;
   }
-  header ul {
+  body header ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1787,27 +1737,27 @@ footer .bottom .icons a i:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  header ul li {
+  body header ul li {
     padding-left: 30px;
     padding-bottom: 20px;
   }
-  header ul li a {
+  body header ul li a {
     font-family: 'roman';
     color: #000;
     font-size: 30px;
     text-decoration: none;
   }
-  header ul li a:hover {
+  body header ul li a:hover {
     color: #fff;
     text-decoration: none;
   }
-  header ul.change {
+  body header ul.change {
     right: 0;
   }
-  .heroe {
+  body .heroe {
     height: 100vh;
   }
-  .heroe .rectangle {
+  body .heroe .rectangle {
     height: 70%;
     width: 200px;
     left: 19%;
@@ -1816,95 +1766,95 @@ footer .bottom .icons a i:hover {
             transform: translate(-19%, 0%);
     margin: auto 0;
   }
-  .heroe .rectangle .dots {
+  body .heroe .rectangle .dots {
     top: -14%;
     right: 92%;
   }
-  .heroe .rectangle .dots .triangle {
+  body .heroe .rectangle .dots .triangle {
     bottom: -30px;
     height: 80px;
   }
-  .heroe .rectangle .dots .dot {
+  body .heroe .rectangle .dots .dot {
     height: 80px;
   }
-  .heroe .rectangle .dots-2 {
+  body .heroe .rectangle .dots-2 {
     bottom: -25%;
     left: 20%;
   }
-  .heroe .rectangle .dots-2 .triangle {
+  body .heroe .rectangle .dots-2 .triangle {
     position: relative;
     right: -30px;
     height: 80px;
   }
-  .heroe .rectangle .dots-2 .dot {
+  body .heroe .rectangle .dots-2 .dot {
     position: relative;
     height: 80px;
   }
-  .heroe .main-text {
+  body .heroe .main-text {
     left: 0;
   }
-  .heroe .main-text h1 {
+  body .heroe .main-text h1 {
     font-size: 30px;
   }
-  .heroe .main-text p {
+  body .heroe .main-text p {
     font-size: 20px;
   }
-  .industry {
+  body .industry {
     margin: 30px auto;
   }
-  .industry h2 {
+  body .industry h2 {
     padding-top: 30px;
     font-size: 30px;
   }
-  .industry h2:nth-of-type(2) {
+  body .industry h2:nth-of-type(2) {
     text-align: left;
   }
-  .industry p {
+  body .industry p {
     font-size: 20px;
     padding-bottom: 70px;
   }
-  .industry > div {
+  body .industry > div {
     padding: 0 20px;
   }
-  .industry > div .company {
-    height: 300px;
+  body .industry > div .company {
+    height: 220px !important;
   }
-  .industry > div .company img {
+  body .industry > div .company img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .industry > div .company .text {
+  body .industry > div .company .text {
     bottom: 0% !important;
   }
-  .industry > div .company .text a {
+  body .industry > div .company .text a {
     opacity: 1 !important;
   }
-  .industry > div .company .text p {
+  body .industry > div .company .text p {
     font-size: 20px !important;
   }
-  .industry > div ul.nav li {
+  body .industry > div ul.nav li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 20px;
     width: calc(100%/3.5);
   }
-  .industry > div ul.nav li a {
+  body .industry > div ul.nav li a {
     font-size: 20px;
   }
-  .testimony {
+  body .testimony {
     height: 100vh;
     margin: 30px 0 100px;
   }
-  .testimony > div {
+  body .testimony > div {
     overflow: hidden;
   }
-  .testimony > div > div {
+  body .testimony > div > div {
     position: absolute;
     top: 30%;
     -webkit-transform: translate(auto, -37%);
             transform: translate(auto, -37%);
   }
-  .testimony > div > div .test-caption {
+  body .testimony > div > div .test-caption {
     width: 570px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1912,33 +1862,35 @@ footer .bottom .icons a i:hover {
     position: relative;
     display: block;
   }
-  .testimony > div > div .test-caption img {
+  body .testimony > div > div .test-caption img {
     height: 300px;
     width: 250px;
     -o-object-fit: cover;
        object-fit: cover;
     padding-right: 20px;
   }
-  .testimony > div > div .test-caption .test-card {
-    height: 150px;
+  body .testimony > div > div .test-caption .test-card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 70%;
     top: 70%;
     right: 20%;
     padding-top: 0;
   }
-  .testimony > div > div .test-caption .test-card p {
+  body .testimony > div > div .test-caption .test-card p {
     font-size: 15px;
     padding: 10px 15px;
     line-height: 30px;
   }
-  .testimony > div > div .test-caption .test-card p sup {
+  body .testimony > div > div .test-caption .test-card p sup {
     padding-right: 10px;
   }
-  .testimony > div > div .test-caption .test-card h5 {
+  body .testimony > div > div .test-caption .test-card h5 {
     font-size: 20px;
     padding-top: 10px;
   }
-  .testimony > div > div .test-caption .test-card .control {
+  body .testimony > div > div .test-caption .test-card .control {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1949,65 +1901,74 @@ footer .bottom .icons a i:hover {
     margin-left: auto;
     bottom: 10px;
   }
-  .testimony > div > div .test-caption .test-card .control a {
+  body .testimony > div > div .test-caption .test-card .control a {
     height: 30px;
     width: 30px;
   }
-  .testimony > div > div .test-caption .test-card .control a span {
+  body .testimony > div > div .test-caption .test-card .control a span {
     font-size: 20px;
   }
-  .testimony > div > div .company-review p {
+  body .testimony > div > div .company-review p {
     font-family: 'roman';
     font-size: 20px;
     color: #fff;
   }
-  .testimony > div > div .company-review p:nth-of-type(2) {
+  body .testimony > div > div .company-review p:nth-of-type(2) {
     padding-top: 20px;
     padding-right: 60px;
   }
-  .testimony > div > div .company-review h2 {
+  body .testimony > div > div .company-review h2 {
     font-size: 30px;
     padding: 20px 0 30px 0;
     color: #fff;
   }
-  .testimony > div > div .company-review hr.line {
+  body .testimony > div > div .company-review hr.line {
     width: 120px;
     height: 5px;
     background-color: #fff;
     margin: initial;
     border: none;
   }
-  .scenario {
+  body .scenario {
     margin: 30px auto;
   }
-  .scenario h2 {
+  body .scenario h2 {
     font-size: 25px;
     padding-top: 40px;
     padding-bottom: 0;
   }
-  .scenario .biz-case {
+  body .scenario .biz-case {
     text-align: left;
   }
-  .scenario .biz-case img {
+  body .scenario .biz-case img {
     height: 70px;
   }
-  .scenario .biz-case h3 {
+  body .scenario .biz-case h3 {
     padding-left: 0;
   }
-  .scenario .biz-case ul {
+  body .scenario .biz-case ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     padding-left: 0px;
   }
-  .scenario .biz-case ul li {
+  body .scenario .biz-case ul li {
     margin-right: 12px;
   }
-  .scenario .tab-content {
+  body .scenario .biz-case ul li a {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .scenario .tab-content {
     margin-left: 0px;
   }
-  .form {
+  body .form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2016,43 +1977,43 @@ footer .bottom .icons a i:hover {
             justify-content: center;
     margin: 30px 0;
   }
-  .form .bussiness-tag {
+  body .form .bussiness-tag {
     width: 100%;
     height: 500px;
     margin-bottom: 20px;
   }
-  .form .bussiness-tag img {
+  body .form .bussiness-tag img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .form .bussiness-tag .biz-card {
+  body .form .bussiness-tag .biz-card {
     bottom: 0%;
     background: #f6c139;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
   }
-  .form .bussiness-tag .biz-card h2 {
+  body .form .bussiness-tag .biz-card h2 {
     font-size: 24px;
   }
-  .form form {
+  body .form form {
     width: 100%;
     padding: 0 12px;
   }
-  .form form h2 {
+  body .form form h2 {
     padding-bottom: 20px;
     font-size: 24px;
   }
-  .form form p {
+  body .form form p {
     font-size: 18px;
     padding-bottom: 24px;
   }
-  footer .newsletter h2 {
+  body footer .newsletter h2 {
     font-size: 30px;
   }
-  footer .newsletter .inputs {
+  body footer .newsletter .inputs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2060,48 +2021,48 @@ footer .bottom .icons a i:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .newsletter .inputs input {
+  body footer .newsletter .inputs input {
     width: 260px;
     height: 60px;
     font-size: 20px;
   }
-  footer .cont-details {
+  body footer .cont-details {
     padding: 60px 0;
     border-top: 1px solid #4d4d4d;
     border-bottom: 1px solid #4d4d4d;
     margin: 30px 0;
   }
-  footer .cont-details .detail-1 {
+  body footer .cont-details .detail-1 {
     margin-bottom: 30px;
   }
-  footer .cont-details .detail-1 img {
+  body footer .cont-details .detail-1 img {
     padding-bottom: 0px;
     height: 170px;
     text-align: left;
   }
-  footer .cont-details .detail-1 p {
+  body footer .cont-details .detail-1 p {
     font-family: 'roman';
     line-height: 20px;
     font-size: 20px;
   }
-  footer .cont-details .detail-2 {
+  body footer .cont-details .detail-2 {
     padding-left: 0px;
   }
-  footer .cont-details .detail-2 h2 {
+  body footer .cont-details .detail-2 h2 {
     font-size: 30px;
     padding-bottom: 30px;
   }
-  footer .cont-details .detail-2 p {
+  body footer .cont-details .detail-2 p {
     padding-bottom: 20px;
     font-size: 20px;
   }
-  footer .cont-details .detail-2 p i {
+  body footer .cont-details .detail-2 p i {
     padding-right: 20px;
   }
-  footer .bottom p {
+  body footer .bottom p {
     font-size: 17px;
   }
-  footer .bottom .icons a {
+  body footer .bottom .icons a {
     height: 40px;
     width: 40px;
     background: #000;
@@ -2116,7 +2077,7 @@ footer .bottom .icons a i:hover {
     text-decoration: none;
     border-radius: 10px;
   }
-  footer .bottom .icons a i {
+  body footer .bottom .icons a i {
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2126,71 +2087,74 @@ footer .bottom .icons a i:hover {
             align-items: center;
     font-size: 20px;
   }
-  footer .bottom .icons a i:hover {
+  body footer .bottom .icons a i:hover {
     color: #f6c139;
   }
-  .about {
+  body .about {
     margin: 30px auto;
   }
-  .about .about-text p {
+  body .about .about-text p {
     font-size: 17px;
     padding-bottom: 20px;
   }
-  .about .about-text h2 {
+  body .about .about-text h2 {
     font-size: 30px;
   }
-  .about .caption {
+  body .about .caption {
     right: -7%;
   }
-  .about .caption .border-img {
+  body .about .caption .border-img {
     height: 400px;
   }
-  .client {
+  body .client {
     margin: 30px auto;
   }
-  .client > div > :first-child > div:first-child {
+  body .client > div > :first-child > div:first-child {
     padding-left: 20px;
   }
-  .client > div > div:last-child img {
+  body .client > div > div:last-child img {
     height: 150px;
     width: auto;
     margin: auto;
   }
-  .client > div > div:last-child .owl-dots {
+  body .client > div > div:last-child .owl-dots {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  header {
+  body header {
     padding: 0 20px;
   }
-  header img {
+  body header img {
     height: 120px;
   }
-  header ul li a {
+  body header ul li {
+    padding-right: 20px;
+  }
+  body header ul li a {
     font-size: 20px;
   }
-  .heroe {
+  body .heroe {
     height: 60vh;
   }
-  .heroe .main-text {
+  body .heroe .main-text {
     left: 0px;
   }
-  .about {
+  body .about {
     margin-top: 30px;
   }
-  .about .caption {
+  body .about .caption {
     right: 0%;
   }
-  .testimony {
+  body .testimony {
     height: 400px;
     margin-top: 30px;
   }
-  .testimony > div > div {
+  body .testimony > div > div {
     top: 30%;
   }
-  .testimony > div > div .test-caption {
+  body .testimony > div > div .test-caption {
     width: 100%;
     height: 500px;
     position: relative;
@@ -2201,17 +2165,17 @@ footer .bottom .icons a i:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .testimony > div > div .test-caption img {
+  body .testimony > div > div .test-caption img {
     height: 450px;
     width: 300px;
   }
-  .testimony > div > div .test-caption .test-card {
+  body .testimony > div > div .test-caption .test-card {
     height: 300px;
     width: 400px;
     top: 50%;
     right: -76%;
   }
-  section.form {
+  body section.form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -2220,94 +2184,97 @@ footer .bottom .icons a i:hover {
     padding: 0 30px;
     margin: 30px 0;
   }
-  section.form .bussiness-tag {
+  body section.form .bussiness-tag {
     width: 100%;
     margin-bottom: 60px;
   }
-  section.form .bussiness-tag .biz-card {
+  body section.form .bussiness-tag .biz-card {
     bottom: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
   }
-  section.form form {
+  body section.form form {
     width: 100%;
   }
-  section.client {
+  body section.client {
     margin: 30px 0;
   }
-  section.client > div > :first-child > div:first-child {
+  body section.client > div > :first-child > div:first-child {
     padding-left: 0px;
   }
-  section.industry {
+  body section.industry {
     margin: 30px 0;
   }
-  section.industry h2 {
+  body section.industry h2 {
     font-size: 30px;
   }
-  section.industry h2:nth-of-type(2) {
+  body section.industry h2:nth-of-type(2) {
     text-align: left;
   }
-  section.industry > div {
+  body section.industry > div {
     padding: 0 20px;
   }
-  section.industry > div > div > div {
+  body section.industry > div > div > div {
     margin-bottom: 30px;
   }
-  section.industry > div > div > div .company {
+  body section.industry > div > div > div .company {
     height: 250px;
     width: 220px;
   }
-  section.industry > div > div > div .company img {
+  body section.industry > div > div > div .company img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  section.industry > div > div > div .company .text {
+  body section.industry > div > div > div .company .text {
     bottom: 0%;
   }
-  section.industry > div > div > div .company .text h4 {
+  body section.industry > div > div > div .company .text h4 {
     padding-bottom: 20px;
   }
-  section.industry > div > div > div .company .text a {
+  body section.industry > div > div > div .company .text a {
     opacity: 1;
     margin-bottom: 0;
     font-size: 40px;
   }
-  section.industry > div ul.nav {
+  body section.industry > div ul.nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  section.industry > div ul.nav li {
+  body section.industry > div ul.nav li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 30px;
     width: calc(100%/5);
   }
-  section.industry > div ul.nav li a {
+  body section.industry > div ul.nav li a {
     font-size: 24px;
     color: #000;
     font-family: 'roman';
     text-decoration: none;
   }
-  section.scenario {
+  body section.scenario {
     margin: 30px 0;
   }
-  section.scenario .tab-content {
+  body section.scenario .tab-content {
     margin-left: 60px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .heroe {
+  body .heroe {
     height: 600px;
   }
-  .about .caption {
+  body .about .about-text {
+    padding-right: 14px;
+  }
+  body .about .caption {
     right: 0%;
   }
-  .about .caption .iframe {
+  body .about .caption .iframe {
     width: 400px;
     height: 300px;
     position: absolute;
@@ -2323,79 +2290,234 @@ footer .bottom .icons a i:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .industry {
+  body .industry {
     margin-bottom: 30px;
   }
-  .industry p {
+  body .industry p {
     font-family: 'roman';
     text-align: center;
     font-size: 24px;
     padding-bottom: 70px;
   }
-  .industry > div {
+  body .industry > div {
     padding: 0 20px;
   }
-  .industry > div > div > div .company {
+  body .industry > div > div > div .company {
     height: 300px;
   }
-  .industry > div > div > div .company img {
+  body .industry > div > div > div .company img {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .industry > div > div > div .company .text {
+  body .industry > div > div > div .company .text {
     bottom: 0%;
   }
-  .industry > div > div > div .company .text a {
+  body .industry > div > div > div .company .text a {
     opacity: 1;
   }
-  section.testimony {
+  body section.testimony {
     margin-top: 60px;
     margin-bottom: 250px;
     height: 600px;
   }
-  section.testimony > div > div .test-caption {
+  body section.testimony > div > div .test-caption {
     width: 100%;
     height: 450px;
   }
-  section.testimony > div > div .test-caption img {
+  body section.testimony > div > div .test-caption img {
     width: 450px;
   }
-  section.testimony > div > div .test-caption .test-card {
+  body section.testimony > div > div .test-caption .test-card {
     top: 60%;
     right: -96%;
   }
-  .form .bussiness-tag .biz-card {
+  body .form .bussiness-tag .biz-card {
     bottom: 0%;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
   }
-  .client > div > :first-child > div:first-child {
+  body .client > div > :first-child > div:first-child {
     padding-left: 0px;
   }
 }
 
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader {
-  display: none;
-}
-
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+@media (min-width: 1200px) {
+  body .industry h2 {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  body .industry h2:nth-of-type(2) {
+    text-align: left;
+  }
+  body .industry p {
+    font-family: 'roman';
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 70px;
+  }
+  body .industry > div {
+    padding: 0 100px;
+  }
+  body .industry > div > div > div {
+    margin-bottom: 30px;
+  }
+  body .industry > div > div > div .company {
+    width: 100%;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  body .industry > div > div > div .company .overlay {
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+  }
+  body .industry > div > div > div .company img {
+    width: 100%;
+    height: 100%;
+  }
+  body .industry > div > div > div .company .text {
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    padding: 30px 20px;
+    bottom: -55%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  body .industry > div > div > div .company .text p {
+    font-size: 17px;
+    text-align: left;
+    padding-bottom: 0;
+    line-height: 25px;
+  }
+  body .industry > div > div > div .company .text h4 {
+    font-size: 30px;
+    font-family: 'bold';
+    padding-bottom: 25px;
+  }
+  body .industry > div > div > div .company .text a {
+    font-size: 24px;
+    color: white;
+    border: 4px solid #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 24px;
+    opacity: 0;
+    text-decoration: none;
+  }
+  body .industry > div > div > div .company:hover {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  body .industry > div > div > div .company:hover .text {
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    padding: 30px 20px;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  body .industry > div > div > div .company:hover .text p {
+    font-size: 17px;
+    text-align: left;
+    padding-bottom: 0;
+    line-height: 25px;
+  }
+  body .industry > div > div > div .company:hover .text h4 {
+    font-size: 30px;
+    font-family: 'bold';
+    padding-bottom: 25px;
+  }
+  body .industry > div > div > div .company:hover .text a {
+    font-size: 24px;
+    color: white;
+    border: 4px solid #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 24px;
+    opacity: 1;
+  }
+  body .industry > div ul.nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .industry > div ul.nav li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 30px;
+    width: calc(100%/5);
+  }
+  body .industry > div ul.nav li a {
+    font-size: 24px;
+    color: #000;
+    font-family: 'roman';
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

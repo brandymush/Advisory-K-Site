@@ -56,10 +56,11 @@ h1,h2{font-size: 43px;font-family: 'bold';}
 p{font-family: 'roman';}
 input,::placeholder{color: #000;}
 // HEADER SECTION STYLES STARTS
+body{
  header{display: flex;justify-content: space-between;height:15vh;align-items: center;padding:0 50px;
      img{height:120px;}
      ul{ 
-        li{padding-right:20px;
+        li{padding-right:40px;
             a{font-family:'roman';color:#000;font-size:24px;text-decoration: none;
                &:hover{color:rgb(246, 193, 57);text-decoration: none;}
             }
@@ -135,27 +136,17 @@ input,::placeholder{color: #000;}
      >div{padding: 0 100px;
       >div{
         >div{margin-bottom:30px;
-     .company{width:100%;border-radius:4px;display:flex;justify-content:center;position: relative;height:100%;overflow: hidden;
+     .company{width:100%;border-radius:4px;display:flex;justify-content:center;position: relative;height:100%;overflow: hidden;transition:all .5s ease-in-out;
      .overlay{background: #000;position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity:.4;}
          img{width:100%;height:100%;}
-         .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;bottom:-50%;transition:all .5s ease;
+         .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;bottom:0%;transition:all .5s ease-in-out;
            p{font-size:17px;text-align: left;padding-bottom:0;line-height:25px;}
            h4{font-size:30px;font-family: 'bold';padding-bottom: 25px;}
            a{font-size: 24px;color: white;border:4px solid #fff;width: fit-content;border-radius: 100%;height:40px;width: 40px;display: flex;align-items: center;justify-content: center;margin-bottom:24px;opacity:0;text-decoration: none;}
            
            
          }
-         &:hover{transition: all 1s ease-in-out;
-
-           .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;top:0;bottom:0;transition:all .5s ease-in-out;
-           p{font-size:17px;text-align: left;padding-bottom:0;line-height:25px;}
-           h4{font-size:30px;font-family: 'bold';padding-bottom: 25px;}
-           a{font-size: 24px;color: white;border:4px solid #fff;width: fit-content;border-radius: 100%;height:35px;width: 35px;display: flex;align-items: center;justify-content: center;margin-bottom:24px;opacity:1;}
-           
-           
-         }
-            
-         }
+       
      }}}
      ul.nav{justify-content: space-between;
         li{flex-wrap:wrap;padding-bottom:30px;width:calc(100%/5);
@@ -344,7 +335,7 @@ input,::placeholder{color: #000;}
            .test-caption{width:523px !important;height:400px;position: relative;
            p{padding: 0;}
                img{height:145px;width:100%;object-fit: cover;position: relative;z-index: 999;}
-               .test-card{height: 240px; width:320px;top:60%;right: -165px;z-index: 9999;
+               .test-card{height:fit-content; width:320px;top:60%;right: -165px;z-index: 9999;
                 p{font-size:12px;}
                 h5{padding-top:0px;}
                 .control{bottom:-5px;right:0;
@@ -539,6 +530,7 @@ input,::placeholder{color: #000;}
         ul{flex-direction:row;
             padding-left:0px;
             li{margin-right:12px;
+                 a{width:100px;display: flex;justify-content: center;}
               
                 
               }
@@ -697,7 +689,7 @@ input,::placeholder{color: #000;}
      p{font-size:20px;padding-bottom:70px;}
       
      >div{padding: 0 20px;
-      .company{height:300px;
+      .company{height:220px !important;
      
         img{object-fit: cover;}
          .text{bottom:0% !important;
@@ -729,7 +721,7 @@ input,::placeholder{color: #000;}
           
            .test-caption{width:570px;height:fit-content;position: relative;display:block;
                img{height:300px;width:250px;object-fit: cover;padding-right:20px;}
-               .test-card{height:150px;width:70%;top:70%;right:20%;padding-top: 0;
+               .test-card{height:fit-content;width:70%;top:70%;right:20%;padding-top: 0;
                   p{font-size:15px;padding:10px 15px;line-height:30px;
                     sup{padding-right:10px;}
                   }
@@ -765,6 +757,7 @@ input,::placeholder{color: #000;}
         ul{flex-direction:row;
             padding-left:0px;
             li{margin-right:12px;
+                 a{width: 100px;display: flex;justify-content: center;}
               
                 
               }
@@ -877,7 +870,7 @@ input,::placeholder{color: #000;}
  header{padding:0 20px;
      img{height:120px;}
      ul{ 
-        li{
+        li{padding-right:20px;
             a{font-size:20px; }}}
 
    }
@@ -996,10 +989,9 @@ section.form{flex-wrap: wrap;justify-content:center;padding:0 30px;margin:30px 0
 //about styles
 
 .about{
-    //  .about-text{
-    //       p{font-size:22px;font-family: 'roman';line-height:40px;padding-bottom:30px;}
-    //       h2{line-height:50px;padding-bottom:30px;}
-    //  }
+     .about-text{padding-right:14px;
+       
+     }
      .caption{right:0%;
  
         .iframe{width:400px;height:300px;position: absolute;right:15%;bottom: 5%;display:flex;align-items: center;justify-content: center;;}
@@ -1087,19 +1079,47 @@ section.form{flex-wrap: wrap;justify-content:center;padding:0 30px;margin:30px 0
        //extra large device (large desktop, 1200px and up )
        @media (min-width:1200px) {
           
-       }
 
-       /* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+.industry{
+     h2{text-align: center;padding-bottom:25px;
+       &:nth-of-type(2){text-align: left;}
+     }
+     p{font-family:'roman';text-align: center;font-size:24px;padding-bottom:70px;}
+     >div{padding: 0 100px;
+      >div{
+        >div{margin-bottom:30px;
+     .company{width:100%;border-radius:4px;display:flex;justify-content:center;position: relative;height:100%;overflow: hidden;transition:all .5s ease-in-out;
+     .overlay{background: #000;position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity:.4;}
+         img{width:100%;height:100%;}
+         .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;bottom:-55%;transition:all .5s ease-in-out;
+           p{font-size:17px;text-align: left;padding-bottom:0;line-height:25px;}
+           h4{font-size:30px;font-family: 'bold';padding-bottom: 25px;}
+           a{font-size: 24px;color: white;border:4px solid #fff;width: fit-content;border-radius: 100%;height:40px;width: 40px;display: flex;align-items: center;justify-content: center;margin-bottom:24px;opacity:0;text-decoration: none;}
+           
+           
+         }
+         &:hover{transition: all 1s ease-in-out;
+
+           .text{position: absolute;z-index: 999;color:#fff;display:flex;flex-direction:column;justify-content:center;height:100%;padding:30px 20px;top:0;bottom:0;transition:all .5s ease-in-out;
+           p{font-size:17px;text-align: left;padding-bottom:0;line-height:25px;}
+           h4{font-size:30px;font-family: 'bold';padding-bottom: 25px;}
+           a{font-size: 24px;color: white;border:4px solid #fff;width: fit-content;border-radius: 100%;height:35px;width: 35px;display: flex;align-items: center;justify-content: center;margin-bottom:24px;opacity:1;}
+           
+           
+         }
+            
+         }
+     }}}
+     ul.nav{justify-content: space-between;
+        li{flex-wrap:wrap;padding-bottom:30px;width:calc(100%/5);
+            a{font-size:24px;color:#000;font-family: 'roman';text-decoration:none;}
+        }
+     }
+     
+     }
+   
+   }
+
+   // Companies ends
+       }
 }
