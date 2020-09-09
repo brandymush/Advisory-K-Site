@@ -2511,7 +2511,7 @@ body footer .bottom .icons a i:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 30px;
-    width: calc(100%/5);
+    width: calc(100%/5.5);
   }
   body .industry > div ul.nav li a {
     font-size: 24px;
