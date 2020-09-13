@@ -942,6 +942,7 @@ body .client > div > div:last-child .owl-dots button.active {
 body footer {
   background-color: #f6c139;
   padding: 60px 0;
+  position: relative;
 }
 
 body footer .newsletter {
@@ -1077,6 +1078,15 @@ body footer .bottom p {
   font-size: 26px;
 }
 
+body footer .bottom .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body footer .bottom .icons a {
   height: 40px;
   width: 40px;
@@ -1091,6 +1101,7 @@ body footer .bottom .icons a {
           flex-direction: row;
   text-decoration: none;
   border-radius: 10px;
+  margin-left: 5px;
 }
 
 body footer .bottom .icons a i {
@@ -1106,6 +1117,27 @@ body footer .bottom .icons a i {
 
 body footer .bottom .icons a i:hover {
   color: #f6c139;
+}
+
+body #myBtn {
+  background-color: #fff;
+  border-radius: 100%;
+  margin-left: 15px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+body #myBtn i {
+  font-size: 30px;
+  color: #f6c139;
+  text-decoration: none;
+}
+
+body #myBtn:hover {
+  background-color: #000;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  /* Add a dark-grey background on hover */
 }
 
 @media (max-width: 568px) and (min-width: 568px) {
